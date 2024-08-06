@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-div">
+            <div class="glass first-div">
+          <div class="top">
+              <p class="gradient-text left">DATE | TIME</p>
+                <input type="text" id="locationInput" placeholder="Enter location" autocomplete="off"> <button class="search btn">Search</button></div>
+                <div class="weather-info">
+                <div id="openweathermap-widget-15"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 15,cityid: '2643743',appid: 'a6c703e5d1d534487233637de539a016',units: 'metric',containerid: 'openweathermap-widget-15',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+                
+                    <h1 class="weather left">Snowy</h1>
+                    <div class="line"></div>
+                    <div class="cards"></div>
+                </div>
+            </div>
+            <div class="glass second-div">
+                <p class="gradient-text">Weather Details</p>
+                <div class="location-info center">
+                    <h1 class="temp">11°C</h1>
+                    <p class="desp">
+                       
+                    </p>
+                    
+                </div>
+                <div class="line"></div>
+                <div class="cards-2">
+                    <div class="card-2">
+                        <div class="card-content-2">
+                            <h2 class="card-title-2">Wind</h2>
+                            <p class="card-value-2">5 km/h</p>
+                        </div>
+                    </div>
+                    <div class="card-2">
+                        <div class="card-content-2">
+                            <h2 class="card-title-2">Pressure</h2>
+                            <p class="card-value-2">1,000 mb</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-day">
+                    <h1>The Next Few Days Forecast</h1> <div class="line"></div> <div class="buttons">
+                    <button class="btn" onclick="fetchWeatherData('5')">5 Days</button>
+                    <button class="btn" onclick="fetchWeatherData('7')">7 Days</button>
+                    <button class="btn" onclick="fetchWeatherData('10')">10 Days</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

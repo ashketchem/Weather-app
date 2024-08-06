@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('./images/background.jpeg'); /* Replace with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.container {
+    display: flex;
+    width: 100%; /* Adjust as needed */
+    height: 60%; /* Adjust as needed */
+    margin: 50px auto; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.glass-div {
+    background: rgba(255, 255, 255, 0.2); /* White background with transparency */
+    /* Glassmorphism effect */
+    color: #fff;
+    margin: 10px;
+    display: flex;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+}
+
+.first-div {
+    flex: 3; /* Takes 3 parts of the available space */
+    position: relative;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.second-div {
+    flex: 1; /* Takes 1 part of the available space */
+    backdrop-filter: blur(4px); /* More blur for the second div */
+    height: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #ffffff, #000000); /* Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.glass {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.left {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.line {
+    height: 2px;
+    width: 98%;
+    background-color: #eee;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 300px; /* Set a max height */
+}
+
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    background: white;
+    z-index: 1000;
+    width: calc(100% - 20px);
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+}
+
+.card-content-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-title-2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-value-2 {
+    font-size: 16px;
+    color: #666;
+}
+
+.next-day {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#locationInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+#locationInput:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px sloid rgba(255, 255, 255, 0.2);
+}
