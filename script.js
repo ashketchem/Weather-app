@@ -154,3 +154,4 @@ function updateThings(data) {
 const search = document.querySelector('.search');
 
 search.addEventListener('click', fetchWeatherData);
+ 
