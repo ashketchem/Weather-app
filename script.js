@@ -33,7 +33,7 @@ function displaySuggestions(suggestions) {
         });
         suggestionsContainer.appendChild(div);
     });
-}*/
+};
 
 async function fetchWeatherData() {
   //  const selectedLocation = locationInput.value; // Get the value from the input box
