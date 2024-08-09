@@ -87,7 +87,7 @@ body {
 }
 
 .cards {
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow: scroll; /* Enable vertical scrolling */
     max-height: 300px; /* Set a max height */
 }
 
@@ -110,6 +110,11 @@ body {
     background-color: #f0f0f0;
 }
 
+.date {
+    font-size: 38px;
+    padding: 5px;
+}
+
 .btn {
     background: rgba(255, 255, 255, 0.3);
     border: none;
@@ -126,7 +131,7 @@ body {
 }
 
 
-card-2 {
+.card-2, .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,8 +141,8 @@ card-2 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 300px;
-}
+    max-width: 400px;
+}   
 
 .card-content-2 {
     display: flex;
@@ -147,18 +152,17 @@ card-2 {
 }
 
 .card-title-2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .card-value-2 {
     font-size: 16px;
-    color: #666;
+    color: #eee;
 }
 
 .next-day {
-    margin-top: 20px;
     text-align: center;
 }
 
@@ -189,4 +193,21 @@ card-2 {
     align-items: center;
     text-align: center;
     border: 1px sloid rgba(255, 255, 255, 0.2);
+}
+
+.temp, .temp-min , .temp-max {
+    background-image: url('./icons/temp.svg');
+    background-repeat: no-repeat;
+    font-size: 24px;
+    
+}
+
+.sunRise {
+    background-image: url('./icons/sunrise.svg');
+    background-repeat: no-repeat;
+}
+
+.sunSet {
+    background-image: url('./icons/sunset.svg');
+    background-repeat: no-repeat;
 }
